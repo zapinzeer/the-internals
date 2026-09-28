@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/site.css">
 <script>
   document.documentElement.classList.add("mjs");
-  try { if (localStorage.getItem("internals-motion") === "off") document.documentElement.classList.add("calm"); } catch (e) { }
+  try { if (localStorage.getItem("internals-motion") !== "on") document.documentElement.classList.add("calm"); } catch (e) { document.documentElement.classList.add("calm"); }
 </script>
 </head>
 <body>
